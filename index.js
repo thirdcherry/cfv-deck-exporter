@@ -55,6 +55,8 @@ const setCardRemoveOnClick = (deckList) => {
       } else if (currentStore === TCGPLAYER) {
         chrome.tabs.create({
           url: `https://www.tcgplayer.com/search/cardfight-vanguard/product?productLineName=cardfight-vanguard&q=${cardName}&view=grid`,
+          url: `https://www.tcgplayer.com/search/shadowverse-evolve/product?productLineName=shadowverse-evolve&q=${cardName}&view=grid`,
+          url: `https://www.tcgplayer.com/search/weiss-schwarz/product?productLineName=weiss-schwarz&q=${cardName}&view=grid`,
         });
       }
     });
